@@ -6,7 +6,7 @@ mock({
   'path/to/fake/dir/a.txt': "hello world"
 });
 
-request(app)
+request('http://localhost:3000')
   .get('/')
   .expect(200)
   .end(function(err, res) {
